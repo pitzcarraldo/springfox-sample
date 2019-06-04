@@ -14,5 +14,5 @@ Open http://localhost:8080/swagger-ui.html and check the **Models** section on t
 
 ## Branches
 
-**master**: Use latest 3.0.0-SNAPSHOT version which has a issue. (May 27, 2019)
-**previous**: Use previous version of 3.0.0-SNAPSHOT, which was okay. (Feb 26, 2019)
+- **master**: Use latest 3.0.0-SNAPSHOT version which has a issue. (May 27, 2019)
+- **previous**: Use previous version of 3.0.0-SNAPSHOT, which was okay. (Feb 26, 2019)
