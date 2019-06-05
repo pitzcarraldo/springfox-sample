@@ -1,8 +1,5 @@
 package com.github.springfox.foo;
 
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -10,11 +7,25 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "foo")
-@Data
-@NoArgsConstructor
 public class Foo {
 	@Id
 	@GeneratedValue
 	private Integer id;
 	private String name;
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
 }

@@ -1,16 +1,12 @@
 package com.github.springfox.bar;
 
 import com.github.springfox.foo.Foo;
-import lombok.Data;
-import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.util.List;
 
 @Entity
 @Table(name = "bar")
-@Data
-@NoArgsConstructor
 public class Bar {
 	@Id
 	@GeneratedValue
@@ -18,4 +14,28 @@ public class Bar {
 	private String name;
 	@OneToMany
 	private List<Foo> foos;
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public List<Foo> getFoos() {
+		return foos;
+	}
+
+	public void setFoos(List<Foo> foos) {
+		this.foos = foos;
+	}
 }
