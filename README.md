@@ -12,6 +12,10 @@ $ gradlew bootRun
 
 Open http://localhost:8080/swagger-ui.html and check the **Models** section on the bottom.
 
+## Run with IDE
+
+You need to setup Lombok for your IDE. Please refer [this article](https://www.baeldung.com/lombok-ide).
+
 ## Branches
 
 - **master**: Use latest 3.0.0-SNAPSHOT version which has a issue. (May 27, 2019)
